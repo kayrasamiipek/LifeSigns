@@ -1,0 +1,245 @@
+
+:root{
+    --background: #111827;
+    --surface: #1F2937;
+    --surfaceLight: #2A3342;
+
+    --primary: #8B5CF6;
+    --accent: #D4AF37;
+
+    --textMain: #F9FAFB;
+    --textMuted: #C7CBD1;
+
+    --baseFont: 'Inter', sans-serif;
+    --baseFont: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1E1B4B
+    );
+
+    color: var(--textMain);
+    font-family: var(--baseFont);
+}
+
+.navBar{
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.introText{
+    font-size: 24px;
+    margin-left: 0px;
+    color: var(--textMain);
+    font-family: var(--baseFont);
+}
+
+.logo{
+    width: 90px;
+    height: 90px;  
+    object-fit: cover;
+    border-radius: 60%;
+}
+
+.about{
+    font-size: 15px;
+    padding: 10px 20px;
+
+    background-color: transparent;
+    color: var(--textMain);
+    font-weight: bold;
+    
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 999px;
+
+
+    cursor: pointer;
+    font-family: var(--baseFont);
+
+}
+.about:hover{
+    background-color: var(--primary);
+    color: var(--textMain);
+}
+
+.birthForm{
+    width: min(500px, 90%);
+    margin: 60px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 24px;
+}
+
+.birthDateLabel{
+    
+    font-size: 18px;
+    font-family: var(--baseFont);
+
+}
+
+.dateRow{
+    display: flex;
+    align-items: center;
+    gap : 30px;
+    margin-bottom: 20px;
+}
+
+.birthDateInput{
+
+    font-size: 16px;
+    font-family: var(--baseFont);
+
+    border: 1px solid var(--textMuted);
+    border-radius: 20px;
+
+    background-color: var(--surface);
+    color: var(--textMain);
+
+}
+
+.timeRow{
+    display: flex;
+    align-items: center;
+    gap : 30px;
+    margin-bottom: 20px;
+}
+.birthTimeLabel{
+    
+    font-size: 18px;
+    font-family: var(--baseFont);
+}
+.birthDateInput{
+
+    font-size: 16px;
+    font-family: var(--baseFont);
+
+    border: 1px solid var(--textMuted);
+    border-radius: 20px;
+
+    background-color: var(--surface);
+    color: var(--textMain);
+}
+
+.birthArea{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap : 30px;
+    margin-bottom: 50px;
+}
+
+.locationSuggestion{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background-color: var(--surfaceLight);
+    border: 1px solid var(--textMuted);
+
+    z-index: 1000;
+}
+
+.locationSuggestion div{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.locationSuggestion div:hover{
+    background-color: var(--surface);
+}
+
+.birthZoneLabel{
+    font-size: 18px;
+    font-family: var(--baseFont);
+}
+
+.birthZoneInput{
+    font-size: 16px;
+    font-family: var(--baseFont);
+
+    border: 1px solid var(--textMuted);
+    border-radius: 20px;
+
+    background-color: var(--surface);
+    color: var(--textMain);
+}
+
+.breakdownButton{
+    font-size: 16px;
+    padding: 10px 20px;
+
+    background-color: var(--primary);
+    color: var(--textMain);
+    font-weight: bold;
+    
+    border: none;
+    border-radius: 999px;
+
+    cursor: pointer;
+    font-family: var(--baseFont);
+}
+
+.aboutSection{
+    display: none;
+    padding-right: 200px;
+    padding-left: 200px;
+    font-size: 16px;
+    font-family: var(--baseFont);
+    color: var(--textMain);
+}
+
+/* results */
+
+.natalResults{
+    display: none;
+    
+}
+
+.resultsSection {
+    display: none;
+}
+
+.topResults {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.astrologyResults,
+.numerologyResults {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.aiResults {
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}

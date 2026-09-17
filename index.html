@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeSigns</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="siteLimits">
+
+
+        <div class="navBar">
+            <img src="pictures/LOGO.jpg" alt="Main Logo" class="logo">
+            <h1 class="introText">Welcome to LifeSigns</h1>
+            <button onclick="showAbout()" class="about">About</button>
+        </div>
+        
+        <div id="aboutSection" class="aboutSection">
+            <h2>About LifeSigns</h2>
+            <p>
+                <p>Hello everyone! This is one of those hobby projects that I’ve wanted to start working on for a while.</p>
+
+                <p>A lot of people may have seen H3H3 online talk about numerology on their podcasts, while others have probably heard zodiac signs brought up in conversations, relationships, or even by completely random people they meet. Personally, I know many people choose not to believe in astrology or zodiac signs because the descriptions can sometimes feel too broad, vague, or general — and I definitely understood and agreed with that criticism.</p>
+
+                <p>However, after taking a deeper look into these ideas, I became curious about whether combining different systems could produce something more specific and interesting. That curiosity is what led me to experiment with this project.</p>
+
+                <p>This website combines two main variables: <strong>Life Path numbers</strong>, which are calculated using a person’s date of birth, and <strong>astrological birth-chart information</strong>, which can become much more specific when using the exact time of birth — ideally down to the minute — along with the location where the person was born.</p>
+
+                <p>The goal of this project is to bring these two systems together and compare their results. I want to explore where they align, where they differ, what those similarities or differences might suggest about a person, and ultimately whether any of the descriptions actually match who that person believes themselves to be.</p>
+
+                <p>This project is not meant to prove that numerology or astrology is scientifically true. Instead, it is an experiment and a fun way to explore these ideas in a more detailed and structured way.</p>
+            </p>
+        </div>
+
+        <div id = "birthForm" class="birthForm">
+            <div class="dateRow">
+                <label class="birthDateLabel">Enter Date:</label>
+                <input class="birthDateInput" type="date" id="birthDate">
+            </div>
+
+            <div class="timeRow">
+                <label class="birthTimeLabel" for="birthTime">Birth Time:</label>
+                <input class="birthDateInput" type="time" id="birthTime">
+            </div>
+
+            <div class="birthArea">
+                <label class="birthZoneLabel" for="birthZone">Birth Zone:</label>
+                <input class="birthZoneInput" type="text" id="birthZone" placeholder="City, State, Country (e.g. New York, NY, USA)">
+                <div id="locationSuggestion" class="locationSuggestion" ></div>
+            </div>
+
+            <button onclick="showBreakdown()" class="breakdownButton">GIVE ME BREAKDOWN</button>
+        </div>
+        
+        <div id="natalResults" class="natalResults"></div>
+        
+        <!-- Results Section -->
+
+        <div id="resultsSection" class="resultsSection">
+
+            <div class="topResults">
+
+                <div class="astrologyResults">
+                    <h2>Astrology</h2>
+                    <div id="astrologyData"></div>
+                </div>
+
+                <div class="numerologyResults">
+                    <h2>Numerology</h2>
+                    <div id="numerologyData"></div>
+                </div>
+
+            </div>
+
+            <div class="aiResults">
+                <h2>LifeSigns Analysis</h2>
+                <div id="aiData"></div>
+            </div>
+
+        </div>   
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+
