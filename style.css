@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 :root{
     --background: #111827;
     --surface: #1F2937;
@@ -220,26 +222,49 @@ body{
 
 .resultsSection {
     display: none;
+    padding: 0 100px;
+    box-sizing: border-box;
 }
 
 .topResults {
     display: flex;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 100px;
     width: 100%;
 }
 
-.astrologyResults,
+.astrologyResults {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: var(--surfaceLight);
+    
+}
 .numerologyResults {
     flex: 1;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 12px;
+    background-color: var(--surfaceLight);
+    
+}
+
+.astrologyColumns {
+    display: flex;
+    gap: 40px;
+}
+
+.astrologyColumns > div {
+    flex: 1;
 }
 
 .aiResults {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 12px;
+    background-color: var(--surfaceLight);
+    
 }
